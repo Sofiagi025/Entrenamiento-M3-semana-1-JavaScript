@@ -2,34 +2,32 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sistema Interactivo de Edad</title>
   <!-- Vincula el archivo CSS para estilos -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- Contenedor principal centrado y estilizado -->
-  <div class="container">
-    <!-- Título principal de la página -->
+  <main class="container">
     <h1>Sistema Interactivo de Edad</h1>
 
-    <!-- Etiqueta para el campo de nombre, asociada por "for" al input con id "nombre" -->
-    <label for="nombre">Nombre:</label>
-    <!-- Campo de texto para que el usuario ingrese su nombre -->
-    <input type="text" id="nombre" placeholder="Escribe tu nombre" />
-    
-    <!-- Etiqueta para el campo de edad -->
-    <label for="edad">Edad:</label>
-    <!-- Campo de texto para que el usuario ingrese su edad -->
-    <input type="text" id="edad" placeholder="Escribe tu edad" />
+    <!-- Formulario de entrada de datos -->
+    <form onsubmit="event.preventDefault(); validarEdad();">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Escribe tu nombre" required />
 
-    <!-- Botón que ejecuta la función validarEdad() cuando se hace clic -->
-    <button onclick="validarEdad()">Enviar</button>
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" placeholder="Escribe tu edad" min="1" required />
+
+      <button type="submit">Enviar</button>
+    </form>
 
     <!-- Párrafo donde se mostrará el mensaje dinámico tras la validación -->
     <p id="mensaje"></p>
-  </div>
+  </main>
 
-  <!-- Archivo JavaScript que contiene la lógica para validar los datos y mostrar mensajes -->
+  <!-- Lógica JS para validación -->
   <script src="sistema_interactivo.js"></script>
 </body>
 </html>
