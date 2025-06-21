@@ -1,0 +1,89 @@
+body {
+  /* Fuente principal para todo el documento */
+  font-family: Arial, sans-serif;
+
+  /* Fondo con un degradado horizontal suave */
+  background: linear-gradient(to right, #fce3ec, #c2e9fb);
+
+  /* Usa flexbox para centrar el contenido horizontal y verticalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Altura completa de la ventana para centrar verticalmente */
+  height: 100vh;
+
+  /* Elimina el margen predeterminado del navegador */
+  margin: 0;
+}
+
+.container {
+  /* Fondo blanco para el área principal */
+  background-color: white;
+
+  /* Espaciado interno para separar contenido del borde */
+  padding: 2rem;
+
+  /* Bordes redondeados para suavizar esquinas */
+  border-radius: 10px;
+
+  /* Sombra para dar profundidad y separación del fondo */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+  /* Centra el texto dentro del contenedor */
+  text-align: center;
+
+  /* Ancho fijo para controlar tamaño en pantallas grandes */
+  width: 300px;
+}
+
+input {
+  /* Ancho casi completo para facilitar la escritura */
+  width: 90%;
+
+  /* Espaciado interno para mejor usabilidad */
+  padding: 0.5rem;
+
+  /* Margen vertical para separar inputs */
+  margin: 0.5rem 0;
+
+  /* Borde ligero y sutil */
+  border: 1px solid #ccc;
+
+  /* Bordes redondeados para un estilo más amigable */
+  border-radius: 5px;
+}
+
+button {
+  /* Espaciado cómodo para facilitar clic */
+  padding: 0.5rem 1rem;
+
+  /* Color de fondo verde para llamar la atención */
+  background-color: #4caf50;
+
+  /* Texto en blanco para contraste */
+  color: white;
+
+  /* Sin borde para un diseño limpio */
+  border: none;
+
+  /* Bordes redondeados */
+  border-radius: 5px;
+
+  /* Cambia el cursor para indicar interactividad */
+  cursor: pointer;
+}
+
+button:hover {
+  /* Cambio de color al pasar el mouse para feedback visual */
+  background-color: #45a049;
+}
+
+#mensaje {
+  /* Margen arriba para separar del botón */
+  margin-top: 1rem;
+
+  /* Texto en negrita para resaltar el mensaje */
+  font-weight: bold;
+}
+
